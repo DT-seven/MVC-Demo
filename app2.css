@@ -1,0 +1,20 @@
+#app2 {
+  border: 1px solid blue;
+  height: 50vh;
+  width: 50%;
+}
+#app2 .tab-bar {
+  display: flex;
+  flex-direction: row;
+}
+#app2 .tab-bar div {
+  width: 50%;
+  height: 30px;
+  background-color: #888888;
+}
+#app2 .tab-content div {
+  display: none;
+}
+#app2 .tab-content div.active {
+  display: block;
+}

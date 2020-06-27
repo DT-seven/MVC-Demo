@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#app1 {
+  border: 1px solid red;
+  width: 50%;
+  height: 50vh;
+}
+#app1 .action > button {
+  width: 50px;
+}
+
+#app2 {
+  border: 1px solid blue;
+  height: 50vh;
+  width: 50%;
+}
+#app2 .tab-bar {
+  display: flex;
+  flex-direction: row;
+}
+#app2 .tab-bar div {
+  width: 50%;
+  height: 30px;
+  background-color: #888888;
+}
+#app2 .tab-content div {
+  display: none;
+}
+#app2 .tab-content div.active {
+  display: block;
+}
+
+#app3 {
+  height: 50vh;
+  width: 50%;
+  border: 1px solid yellow;
+}
+#app3 > .square {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  margin-top: 50px;
+  transition: linear 1s;
+}
+
+.move {
+  transform: translateX(100px);
+}
+
+#app4 {
+  height: 50vh;
+  width: 50%;
+  border: 1px solid orange;
+}
+@keyframes change {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: orchid;
+  }
+  100% {
+    background-color: darkgrey;
+  }
+}
+#app4 > .circle {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+#app4 .active {
+  animation: change 1s infinite alternate linear;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

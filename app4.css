@@ -1,0 +1,26 @@
+#app4 {
+  height: 50vh;
+  width: 50%;
+  border: 1px solid orange;
+}
+@keyframes change {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: orchid;
+  }
+  100% {
+    background-color: darkgrey;
+  }
+}
+#app4 > .circle {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+#app4 .active {
+  animation: change 1s infinite alternate linear;
+}
